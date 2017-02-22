@@ -16,12 +16,13 @@ class ShowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "显示"
-        // Do any additional setup after loading the view.
-        if #available(iOS 10.0, *) {
-            context = appDelegate.persistenContainer.viewContext
-        }else{
-            context = appDelegate.managedObjectContext
-        }
+//        // Do any additional setup after loading the view.
+//        if #available(iOS 10.0, *) {
+//            context = appDelegate.persistenContainer.viewContext
+//        }else{
+//            context = appDelegate.managedObjectContext
+//        }
+        context = CoreDataManager.sharedManager.getManagerObjectContext()
         do {
             let rels = try context.fetch(request) as! [NSManagedObject]
             var re = ""

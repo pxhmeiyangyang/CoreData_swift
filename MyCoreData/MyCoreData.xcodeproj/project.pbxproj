@@ -16,7 +16,7 @@
 		F1C8930C1E5199560024A765 /* MyCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8930B1E5199560024A765 /* MyCoreDataUITests.swift */; };
 		F1C8931A1E51AEB20024A765 /* ShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C893191E51AEB20024A765 /* ShowVC.swift */; };
 		F1E22FC91E54323500FD111B /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1E22FC71E54323500FD111B /* MyCoreData.xcdatamodeld */; };
-		F1E22FCB1E5456A700FD111B /* CoreDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E22FCA1E5456A700FD111B /* CoreDataTool.swift */; };
+		F1E22FD31E546A1600FD111B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E22FD21E546A1600FD111B /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		F1C8930D1E5199560024A765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C893191E51AEB20024A765 /* ShowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowVC.swift; sourceTree = "<group>"; };
 		F1E22FC81E54323500FD111B /* MyCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreData.xcdatamodel; sourceTree = "<group>"; };
-		F1E22FCA1E5456A700FD111B /* CoreDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTool.swift; sourceTree = "<group>"; };
+		F1E22FD21E546A1600FD111B /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			children = (
 				F1C892EB1E5199550024A765 /* AppDelegate.swift */,
 				F1C892ED1E5199550024A765 /* ViewController.swift */,
-				F1E22FCA1E5456A700FD111B /* CoreDataTool.swift */,
+				F1E22FD21E546A1600FD111B /* CoreDataManager.swift */,
 				F1C892EF1E5199550024A765 /* Main.storyboard */,
 				F1C892F21E5199550024A765 /* Assets.xcassets */,
 				F1C892F41E5199550024A765 /* LaunchScreen.storyboard */,
@@ -270,8 +270,8 @@
 			files = (
 				F1E22FC91E54323500FD111B /* MyCoreData.xcdatamodeld in Sources */,
 				F1C8931A1E51AEB20024A765 /* ShowVC.swift in Sources */,
-				F1E22FCB1E5456A700FD111B /* CoreDataTool.swift in Sources */,
 				F1C892EE1E5199550024A765 /* ViewController.swift in Sources */,
+				F1E22FD31E546A1600FD111B /* CoreDataManager.swift in Sources */,
 				F1C892EC1E5199550024A765 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

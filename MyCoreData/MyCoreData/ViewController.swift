@@ -18,16 +18,19 @@ class ViewController: UIViewController {
     
     var myContext : NSManagedObjectContext!
     
+    let manager = CoreDataManager.sharedManager
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        // Do any additional setup after loading the view, typically from a nib.
-        if #available(iOS 10.0, *) {
-            myContext = appDelegate.persistenContainer.viewContext
-        }else{
-            print("iOS 9")
-            myContext = appDelegate.managedObjectContext
-        }
+//        // Do any additional setup after loading the view, typically from a nib.
+//        if #available(iOS 10.0, *) {
+//            myContext = appDelegate.persistenContainer.viewContext
+//        }else{
+//            print("iOS 9")
+//            myContext = appDelegate.managedObjectContext
+//        }
+        myContext = CoreDataManager.sharedManager.getManagerObjectContext()
     }
 
     @IBAction func addAction(_ sender: UIButton) {
